@@ -78,3 +78,49 @@
 
   </div>
 </template>
+
+<template id="resume-edit-page">
+  <div class="vue-component">
+
+  <h1>Edit Resume</h1>
+
+    <ul>
+      <li class="text-danger" v-for="error in errors"> {{ error }} </li>
+    </ul>
+    <div>
+      Id: <input v-model="id"><br>
+      First_name: <input v-model="first_name"><br>
+      Last_name: <input v-model="last_name"><br>
+      Email: <input v-model="email"><br>
+      Phone_number: <input v-model="phone_number"><br>
+      Short_bio: <input v-model="short_bio"><br>
+      Linkedin_url: <input v-model="linkedin_url"><br>
+      Twitter_handle: <input v-model="twitter_handle"><br>
+      Personal_blog_website_url: <input v-model="personal_blog_website_url"><br>
+      Online_resume_url: <input v-model="online_resume_url"><br>
+      Github_url: <input v-model="github_url"><br>
+      Photo: <input v-model="photo"><br> 
+    </div>
+
+  </div>
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
