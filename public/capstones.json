@@ -1,0 +1,14 @@
+    {
+      "name": "Patronus Charms",
+      "description": "Catalog of different Patronus charms",
+      "url": "github.com/patronus_charm_app",
+      "screenshot": "",
+      "student_id": 1
+    },
+    {
+      "name": "OwlMail",
+      "description": "Email for the qizarding world",
+      "url": "github.com/owlmail_client",
+      "screenshot": "",
+      "student_id": 1
+    }

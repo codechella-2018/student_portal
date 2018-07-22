@@ -1,0 +1,15 @@
+    {
+      "id": 1,
+      "name": "potion making",
+      "student_id": 1
+    },
+    {
+      "id": 2,
+      "name": "patronus charm",
+      "student_id": 1
+    },
+    {
+      "id": 3,
+      "name": "database management",
+      "student_id": 1
+    }
