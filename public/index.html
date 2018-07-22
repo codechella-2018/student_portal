@@ -29,6 +29,33 @@
   </div>
 </template>
 
+<template id="student-show-page">
+  <div class="vue-component">
+
+    <h1>{{ message }}</h1>
+
+      <p>First Name: {{student.first_name}}<br>
+      Last Name: {{student.last_name}}<br>
+      {{ student.email }}<br>
+      {{ student.phone }}<br></p>
+      <p>Bio: <br>
+        <textarea :value="student.short_bio" cols="50" rows="8"></textarea><br>
+      </p>
+      <p>LinkedIn Url: {{student.linkedin_url}}<br>
+        Twiter Id: {{student.twitter_handle}}<br>
+        Personal Blog/Website: {{student.personal_blog_website_url}}<br>
+        Resume Url: {{student.online_resume_url}}<br>
+        Github Url: {{student.github_url}}<br>
+        Photo: {{student.photo}}<br></p>
+      <br><br>
+<!--       <a href="/">Return to Organization Index</a> &emsp; -->
+      <a v-bind:href=" '/#/users/' +student.id + '/edit' ">Edit student Information</a> &emsp;
+<!--       <button v-on:click="deleteUser(student)">Delete User</button>  -->
+    </p>
+    </div>
+
+</template>
+
 
 <template id="login-page">
   <div class="vue-component">
