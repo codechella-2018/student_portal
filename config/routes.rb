@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   namespace :client do 
 
     get "/students" => "students#index"
-    get "/students" => "students#show"
+    get "/students/:id" => "students#show"
     patch "/students/:id" => "students#update"
     
   end 
