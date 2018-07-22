@@ -72,6 +72,7 @@
       Details: {{education.details}}</p>
       <a v-bind:href=" '/#/educations/' +education.id + '/edit' ">Edit Education Information</a> &emsp; <br>
 
+
     </div>
 
     <h3>Skills</h3>
@@ -89,6 +90,25 @@
       <a v-bind:href=" '/#/capstones/' +capstone.id + '/edit' ">Edit Capstone Information</a> &emsp; <br>
 
     </div>
+
+    </div>
+
+    <h3>Skills</h3>
+    <ul v-for="skill in student.skills">
+      <li>{{skill.name}} &ensp;
+      <a v-bind:href=" '/#/skills/' +skill.id + '/edit' ">Edit</a></li>
+    </ul>
+
+    <h3>Capstone Projects</h3>
+    <div v-for="capstone in student.capstones">
+      <p>Project Name: {{capstone.name}}<br>
+      Description: {{capstone.description}}<br>
+      URL: {{capstone.url}}<br>
+      Screenshot: {{capstone.screenshot}}</p>
+      <a v-bind:href=" '/#/capstones/' +capstone.id + '/edit' ">Edit Capstone Information</a> &emsp; <br>
+
+    </div>
+
 
   </div>
 
@@ -117,10 +137,60 @@
   </div>
 </template>
 
-<template id="resume-edit-page">
+<template id="student-edit-page">
   <div class="vue-component">
 
   <h1>Edit Resume</h1>
+
+    <ul>
+      <li class="text-danger" v-for="error in errors"> {{ error }} </li>
+    </ul>
+    <div>
+      Id: <input v-model="id"><br>
+      First_name: <input v-model="first_name"><br>
+      Last_name: <input v-model="last_name"><br>
+      Email: <input v-model="email"><br>
+      Phone_number: <input v-model="phone_number"><br>
+      Short_bio: <input v-model="short_bio"><br>
+      Linkedin_url: <input v-model="linkedin_url"><br>
+      Twitter_handle: <input v-model="twitter_handle"><br>
+      Personal_blog_website_url: <input v-model="personal_blog_website_url"><br>
+      Online_resume_url: <input v-model="online_resume_url"><br>
+      Github_url: <input v-model="github_url"><br>
+      Photo: <input v-model="photo"><br> 
+    </div>
+    
+  </div>
+</template>
+
+<template id="experience-edit-page">
+  <div class="vue-component">
+
+  <h1>Edit Experiences</h1>
+
+    <ul>
+      <li class="text-danger" v-for="error in errors"> {{ error }} </li>
+    </ul>
+    <div>
+      Id: <input v-model="id"><br>
+      Start_date: <input v-model="start_date"><br>
+      End_date: <input v-model="end_date"><br>
+      Job_title: <input v-model="job_title"><br>
+      company_name: <input v-model="company_name"><br>
+      details: <input v-model="details"><br>
+    </div>
+
+    <div>
+      response: {{ response }}
+    </div>
+
+  </div>
+</template>
+
+<template id="education-edit-page">
+  <div class="vue-component">
+
+  <h1>Edit Education</h1>
 
     <ul>
       <li class="text-danger" v-for="error in errors"> {{ error }} </li>
@@ -143,6 +213,40 @@
   </div>
 </template>
 
+<template id="skill-edit-page">
+  <div class="vue-component">
+
+  <h1>Edit Skill</h1>
+
+    <ul>
+      <li class="text-danger" v-for="error in errors"> {{ error }} </li>
+    </ul>
+    <div>
+      Id: <input v-model="id"><br>
+      Name: <input v-model="name"><br>
+    </div>
+
+  </div>
+</template>
+
+<template id="capstone-edit-page">
+  <div class="vue-component">
+
+  <h1>Edit Capstones</h1>
+
+    <ul>
+      <li class="text-danger" v-for="error in errors"> {{ error }} </li>
+    </ul>
+    <div>
+      Id: <input v-model="id"><br>
+      Name: <input v-model="name"><br>
+      Description: <input v-model="description"><br>
+      Url: <input v-model="url"><br>
+      Screenshot: <input v-model="screenshot"><br> 
+    </div>
+
+  </div>
+</template>
 
 
 
