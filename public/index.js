@@ -166,13 +166,15 @@ var ExperienceEditPage = {
     };
   },
   created: function() {
-    axios.get("/student.json").then(function(response) {
-      this.id = response.data.id;
-      this.start_date = response.data.start_date;
-      this.end_date = response.data.end_date;
-      this.job_title = response.data.job_title;
-      this.company_name = response.data.company_name;
-      this.details = response.data.details;
+    axios.get("/experiences.json").then(function(response) {
+      this.experiences = response.data;
+      console.log(this.experiences);
+      // this.id = response.data.id;
+      // this.start_date = response.data.start_date;
+      // this.end_date = response.data.end_date;
+      // this.job_title = response.data.job_title;
+      // this.company_name = response.data.company_name;
+      // this.details = response.data.details;
     }.bind(this));
   },
   methods: {
@@ -186,7 +188,7 @@ var ExperienceEditPage = {
       details: this.details,
       };
       axios
-      .patch("/student.json")
+      .patch("/experiences.json")
       .then(function(response) {
         router.push("/");
       })
