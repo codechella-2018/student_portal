@@ -1,16 +1,16 @@
 {
 
-  id: 1,
-  first_name: "Harry",
-  last_name: "Potter",
-  email: "h_potter@minofmagic.gov",
-  phone: "(212) 555-1111",
-  short_bio: "The chosen one",
-  linkedin_url: "linkedin.com/harrypotter",
-  twitter_handle: "@thechosenone",
-  personal_blog_website_url: "wordpress.com/harrypotter",
-  online_resume_url: "harrypoter.com/resume",
-  github_url: "github.com/harrypotter",
-  photo: "fakephoto.com/harrypotter.jpg"
+  "id": 1,
+  "first_name": "Harry",
+  "last_name": "Potter",
+  "email": "h_potter@minofmagic.gov",
+  "phone": "(212) 555-1111",
+  "short_bio": "The chosen one",
+  "linkedin_url": "linkedin.com/harrypotter",
+  "twitter_handle": "@thechosenone",
+  "personal_blog_website_url": "wordpress.com/harrypotter",
+  "online_resume_url": "harrypoter.com/resume",
+  "github_url": "github.com/harrypotter",
+  "photo": "fakephoto.com/harrypotter.jpg"
 
 }
