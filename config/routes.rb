@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   namespace :client do 
 
-    
+    get "/students" => "students#index"
 
 
   end 
